@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .Card-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .inner {
+            width: 80%;
+        }
+
+        body {
+            background-color: #222831;
+        }
+
+        .card1 {
+            background-color: #f96d00;
+            color: #222831;
+            margin-right: 10px;
+        }
+        .card1:hover{
+            width:110%;
+        }
+        .card2 {
+            background-color: #f96d00;
+            color: #222831;
+        }
+
+        .btnn {
+            background-color: #222831;
+            color: #f96d00;
+            border: 0;
+        }
+
+        header,
+        footer {
+            background-color: #f96d00;
+            margin-bottom: 20px;
+        }
+
+        .logout {
+            color: #222831;
+            border: #222831 solid;
+        }
+
+        .logout:hover {
+            background-color: #222831;
+            border: #222831 solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-lg  navii">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="uzumaki.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    NARUTO
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn logout btn-outline-success" type="submit">logout</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="Container">
+        <div id="carouselExampleCaptions" class="carousel slide inner" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="image.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">Naruto</h5>
+                        <p style="color: black;">The Story Of Greatest Ninja Ever .</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="kakashi.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kakashi Hatake</h5>
+                        <p>The Copy Ninja.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="uzumaki.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Uzumaki</h5>
+                        <p>The Clan Naruto Belongs To.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="Card-Container">
+        <div class="card-group">
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#narutopos"><img src="narutopic.jpg" class="card-img-top hov" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Naruto Uzumaki</h5>
+                    <p class="card-text">The main character of the series, a ninja with dreams of becoming Hokage.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#sasukepos"><img src="sasuke.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Sasuke Uchiha</h5>
+                    <p class="card-text">Naruto's rival and best friend, Sasuke is a member of the Uchiha clan and is
+                        driven by revenge for his clan's destruction.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#jirayapos"><img src="jiraya.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Jiraiya</h5>
+                    <p class="card-text">One of the legendary Sannin, Jiraiya is Naruto’s mentor and a legendary ninja
+                        with incredible combat prowess.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <a href="Character.html#kushinapos"><img src="KUSHINA.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Kushina Uzumaki </h5>
+                    <p class="card-text">Naruto’s mother, originally from the Uzumaki clan, known for her fiery
+                        personality and strong chakra.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Card-Container">
+        <div class="card-group">
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#kakashipos"><img src="kakashi1.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Kakashi Hatake</h5>
+                    <p class="card-text">The leader of Team 7 and a highly skilled ninja, known as the "Copy Ninja"
+                        because of his Sharingan, which allows him to copy any technique.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#minatopos"><img src="minato.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Minato Namikaze</h5>
+                    <p class="card-text">The Fourth Hokage, also known as the "Yellow Flash" due to his incredible speed
+                        and mastery of the Flying Raijin Jutsu.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#hinatapos"><img src="hinata.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Hinata Hyuga</h5>
+                    <p class="card-text">A member of the Hyuga clan and Naruto’s love interest, Hinata possesses the
+                        Byakugan, a powerful eye technique, and is known for her kindness and gentle nature.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <a href="Character.html#sakurapos"><img src="sakura.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Sakura Haruno</h5>
+                    <p class="card-text">A member of Team 7 along with Naruto and Sasuke, Sakura is initially portrayed
+                        as weak but becomes a powerful medical ninja under Tsunade’s tutelage.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Card-Container">
+        <div class="card-group">
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#tsunadepos"><img src="tsunade.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Tsunade</h5>
+                    <p class="card-text">The Fifth Hokage and another of the legendary Sannin, Tsunade is known for her
+                        incredible strength and medical ninja abilities.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#itachipos"><img src="pics/itachi.jpeg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Itachi Uchiha</h5>
+                    <p class="card-text">Sasuke's older brother, who is initially believed to have betrayed and murdered
+                        the
+                        Uchiha clan but later revealed to have acted for the greater good.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#orochimarupos"><img src="pics/orochimaru.jpg" class="card-img-top"
+                        alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Orochimaru</h5>
+                    <p class="card-text">One of the Sannin and a major antagonist, Orochimaru seeks immortality and
+                        performs
+                        unethical experiments to gain power.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <a href="Character.html#gaarapos"><img src="pics/gaara.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Gaara</h5>
+                    <p class="card-text">Initially a villain, Gaara is the jinchuriki of the One-Tailed Beast and later
+                        becomes a close ally of Naruto and the Kazekage of the Hidden Sand Village.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Card-Container">
+        <div class="card-group">
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#shikamarupos"><img src="pics/SHIKAMARU.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Shikamaru Nara</h5>
+                    <p class="card-text">A highly intelligent ninja known for his strategic mind, Shikamaru is often
+                        seen as
+                        lazy but is a key player in many battles due to his quick thinking.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#madarapos"><img src="pics/p.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Madara Uchiha</h5>
+                    <p class="card-text">One of the main antagonists, Madara is a legendary figure who co-founded the
+                        Hidden
+                        Leaf Village and later seeks to dominate the world</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card1" style="width: 18rem;">
+                <a href="Character.html#painpos"><img src="pics/NAGATO.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Pain (Nagato)</h5>
+                    <p class="card-text">The leader of the Akatsuki organization who seeks to bring peace through
+                        destruction, he controls six bodies known collectively as “Pain.”</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <a href="Character.html#kaguyapos"><img src="pics/KAGAYU.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Kaguya Otsutsuki</h5>
+                    <p class="card-text">The progenitor of chakra, Kaguya is a god-like figure and the final antagonist
+                        of
+                        the series, seeking to reclaim all chakra on Earth.</p>
+                    <a href="Character.html" class="btn btn-primary btnn">Get more
+                        Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class=" navbar navbar-expand-lg  navii">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="uzumaki.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    NARUTO
+                </a>
+                <p>&copy; 2024. Naruto. All Rights Reserved</p>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

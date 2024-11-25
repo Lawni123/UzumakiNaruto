@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .Card-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .inner {
+            width: 80%;
+        }
+
+        body {
+            background-color: #222831;
+        }
+
+        .card1 {
+            background-color: #f96d00;
+            color: #222831;
+            margin-right: 10px;
+        }
+
+        .card2 {
+            background-color: #f96d00;
+            color: #222831;
+        }
+
+        .btnn {
+            background-color: #222831;
+            color: #f96d00;
+            border: 0;
+        }
+
+        header,
+        footer {
+            background-color: #f96d00;
+            margin-bottom: 20px;
+        }
+
+        .logout {
+            color: #222831;
+            border: #222831 solid;
+        }
+
+        .logout:hover {
+            background-color: #222831;
+            border: #222831 solid;
+        }
+
+        .lis {
+            background-color: #222831;
+            color: #f96d00;
+        }
+
+        .uli {
+            border: white solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-lg  navii">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="uzumaki.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    NARUTO
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn logout btn-outline-success" type="submit">logout</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="card-group">
+        <div id="narutopos"class="card card1" style="width: 18rem;">
+            <img src="narutopic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Naruto Uzumaki</h5>
+                <p class="card-text">A spirited ninja from the Uzumaki clan, known for his determination.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uzumaki</li>
+                    <li class="list-group-item lis">Chakra Type: Wind</li>
+                    <li class="list-group-item lis">Best Jutsu: Rasengan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card card1" id="sasukepos" style="width: 18rem;">
+            <img src="sasuke.jpg" class="card-img-top" alt="Sasuke Uchiha">
+            <div class="card-body">
+                <h5 class="card-title">Sasuke Uchiha</h5>
+                <p class="card-text">A genius from the Uchiha clan, driven by revenge and redemption.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uchiha</li>
+                    <li class="list-group-item lis">Chakra Type: Lightning</li>
+                    <li class="list-group-item lis">Best Jutsu: Chidori</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1" id="jirayapos" style="width: 18rem;">
+            <img src="jiraya.jpg" class="card-img-top" alt="Jiraiya">
+            <div class="card-body">
+                <h5 class="card-title">Jiraiya</h5>
+                <p class="card-text">A legendary Sannin, mentor to Naruto, and master of toad techniques.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: None</li>
+                    <li class="list-group-item lis">Chakra Type: Fire</li>
+                    <li class="list-group-item lis">Best Jutsu: Sage Mode</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card card1" id="minatopos" style="width: 18rem;">
+            <img src="minato.jpg" class="card-img-top" alt="Minato Namikaze">
+            <div class="card-body">
+                <h5 class="card-title">Minato Namikaze</h5>
+                <p class="card-text">The Fourth Hokage, known as the Yellow Flash for his incredible speed.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Namikaze</li>
+                    <li class="list-group-item lis">Chakra Type: Wind</li>
+                    <li class="list-group-item lis">Best Jutsu: Flying Raijin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-group"> 
+        
+        
+        <div class="card card1" id="Kushinapos" style="width: 18rem;">
+            <img src="KUSHINA.jpg" class="card-img-top" alt="Kushina Uzumaki">
+            <div class="card-body">
+                <h5 class="card-title">Kushina Uzumaki</h5>
+                <p class="card-text">A fiery kunoichi of the Uzumaki clan, mother to Naruto.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uzumaki</li>
+                    <li class="list-group-item lis">Chakra Type: Sealing</li>
+                    <li class="list-group-item lis">Best Jutsu: Adamantine Sealing Chains</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card card1" id="kakashipos" style="width: 18rem;">
+            <img src="pics/Kakashi.jpg" class="card-img-top" alt="Kakashi Hatake">
+            <div class="card-body">
+                <h5 class="card-title">Kakashi Hatake</h5>
+                <p class="card-text">The Copy Ninja, known for his Sharingan and tactical genius.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Hatake</li>
+                    <li class="list-group-item lis">Chakra Type: Lightning</li>
+                    <li class="list-group-item lis">Best Jutsu: Lightning Blade</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="tsunadepos" style="width: 18rem;">
+            <img src="tsunade.jpg" class="card-img-top" alt="Tsunade">
+            <div class="card-body">
+                <h5 class="card-title">Tsunade</h5>
+                <p class="card-text">The Slug Princess, one of the legendary Sannin and a renowned medical ninja.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Senju</li>
+                    <li class="list-group-item lis">Chakra Type: Medical</li>
+                    <li class="list-group-item lis">Best Jutsu: Creation Rebirth</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="itachipos" style="width: 18rem;">
+            <img src="pics/itachi.jpeg" class="card-img-top" alt="Itachi Uchiha">
+            <div class="card-body">
+                <h5 class="card-title">Itachi Uchiha</h5>
+                <p class="card-text">A tragic hero from the Uchiha clan, known for his sacrifice and Sharingan mastery.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uchiha</li>
+                    <li class="list-group-item lis">Chakra Type: Fire</li>
+                    <li class="list-group-item lis">Best Jutsu: Amaterasu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card card1"id="sakurapos" style="width: 18rem;">
+            <img src="sakura.jpg" class="card-img-top" alt="Sakura Haruno">
+            <div class="card-body">
+                <h5 class="card-title">Sakura Haruno</h5>
+                <p class="card-text">A skilled medical ninja and one of Team 7's original members.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Haruno</li>
+                    <li class="list-group-item lis">Chakra Type: Medical</li>
+                    <li class="list-group-item lis">Best Jutsu: Cherry Blossom Impact</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="hinatapos" style="width: 18rem;">
+            <img src="hinata.jpg" class="card-img-top" alt="Hinata Hyuga">
+            <div class="card-body">
+                <h5 class="card-title">Hinata Hyuga</h5>
+                <p class="card-text">A gentle but determined ninja from the prestigious Hyuga clan.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Hyuga</li>
+                    <li class="list-group-item lis">Chakra Type: Gentle Fist</li>
+                    <li class="list-group-item lis">Best Jutsu: Eight Trigrams Sixty-Four Palms</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="orochimarupos" style="width: 18rem;">
+            <img src="pics/orochimaru.jpg" class="card-img-top" alt="Orochimaru">
+            <div class="card-body">
+                <h5 class="card-title">Orochimaru</h5>
+                <p class="card-text">A sinister genius and one of the legendary Sannin, driven by immortality.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: None</li>
+                    <li class="list-group-item lis">Chakra Type: Snake</li>
+                    <li class="list-group-item lis">Best Jutsu: Edo Tensei</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1" id="gaarapos"style="width: 18rem;">
+            <img src="pics/gaara.jpg" class="card-img-top" alt="Gaara">
+            <div class="card-body">
+                <h5 class="card-title">Gaara</h5>
+                <p class="card-text">The Fifth Kazekage, a former jinchuriki of the One-Tailed Beast.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Kazekage</li>
+                    <li class="list-group-item lis">Chakra Type: Sand</li>
+                    <li class="list-group-item lis">Best Jutsu: Sand Coffin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card card1"id="shikamarupos" style="width: 18rem;">
+            <img src="pics/SHIKAMARU.jpg" class="card-img-top" alt="Shikamaru Nara">
+            <div class="card-body">
+                <h5 class="card-title">Shikamaru Nara</h5>
+                <p class="card-text">A strategic genius from the Nara clan, known for his shadow manipulation.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Nara</li>
+                    <li class="list-group-item lis">Chakra Type: Shadow</li>
+                    <li class="list-group-item lis">Best Jutsu: Shadow Possession Jutsu</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="madarapos" style="width: 18rem;">
+            <img src="pics/p.jpg" class="card-img-top" alt="Madara Uchiha">
+            <div class="card-body">
+                <h5 class="card-title">Madara Uchiha</h5>
+                <p class="card-text">A legendary Uchiha and a key figure in the shinobi world's history.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uchiha</li>
+                    <li class="list-group-item lis">Chakra Type: Fire</li>
+                    <li class="list-group-item lis">Best Jutsu: Susano'o</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="painpos" style="width: 18rem;">
+            <img src="pics/NAGATO.jpg" class="card-img-top" alt="Pain (Nagato)">
+            <div class="card-body">
+                <h5 class="card-title">Pain (Nagato)</h5>
+                <p class="card-text">The leader of Akatsuki, wielder of the Rinnegan and master of the Six Paths of Pain.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Uzumaki</li>
+                    <li class="list-group-item lis">Chakra Type: Rinnegan</li>
+                    <li class="list-group-item lis">Best Jutsu: Almighty Push</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card card1"id="kaguyapos" style="width: 18rem;">
+            <img src="pics/KAGAYU.jpg" class="card-img-top" alt="Kaguya Otsutsuki">
+            <div class="card-body">
+                <h5 class="card-title">Kaguya Otsutsuki</h5>
+                <p class="card-text">The progenitor of chakra, a godlike being with immense power.</p>
+                <ul class="list-group list-group-flush uli">
+                    <li class="list-group-item lis">Clan: Otsutsuki</li>
+                    <li class="list-group-item lis">Chakra Type: All</li>
+                    <li class="list-group-item lis">Best Jutsu: Expansive Truth-Seeking Ball</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
